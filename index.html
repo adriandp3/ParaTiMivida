@@ -1,0 +1,95 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Carta de San Valentín</title>
+      <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body>
+
+      <div id="video-container">
+        <!-- Inserta aquí tu video -->
+        <video autoplay muted loop>
+          <source src="jk1.mp4" type="video/mp4">
+          Tu navegador no soporta la etiqueta de video.
+        </video>
+        <video autoplay muted loop>
+          <source src="jk2.mp4" type="video/mp4">
+          Tu navegador no soporta la etiqueta de video.
+        </video>
+        <video autoplay muted loop>
+          <source src="jk3.mp4" type="video/mp4">
+          Tu navegador no soporta la etiqueta de video.
+        </video>
+        <video autoplay muted loop>
+          <source src="jk4.mp4" type="video/mp4">
+          Tu navegador no soporta la etiqueta de video.
+        </video>
+      </div>
+      
+      <script>
+        function toggleVideos() {
+          var videoContainer = document.getElementById('video-container');
+          videoContainer.style.display = (videoContainer.style.display === 'none') ? 'block' : 'none';
+        }
+      </script>
+
+    <div class="valentines-day" onclick="toggleVideos()">
+      <div class="envelope"></div>
+      <div class="heart"></div>
+      <div class="text">HAPPY <br>VALENTINE'S <br>DAY!</div>
+      <div class="front"></div>
+    </div>
+
+    <div id="card">
+      <div class="side one"></div>
+      <div class="side two">
+        <h2>Ale Medina</h2>
+        <p>En este día especial de San Valentín, quiero tomarme un momento para agradecerte por ser esa persona increíble que eres.</p>
+        <p>Tu compañía ha sido un verdadero regalo en mi vida, llenándola de risas, aventuras y momentos significativos. Valorizo cada conversación profunda que tenemos, así como también los momentos que compartimos juntos. Eres una persona única, llena de cualidades admirables que me inspiran constantemente. Que este día esté lleno de alegría y recuerdos especiales para nosotros. </p>
+      </div>  
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src="./script.js"></script>
+  
+    <div id="photo-container">
+      <img src="taekook.png" alt="Tu Foto">
+      <img src="taekook4.png" alt="Tu Foto">
+      <img src="taekook3.png" alt="Tu Foto">
+    </div>
+    
+    <style>
+      #photo-container {
+        display: flex; /* Utiliza flexbox */
+        flex-direction: column; /* Dirección de los elementos: columna */
+        align-items: center; /* Centra horizontalmente los elementos */
+        position: fixed;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        z-index: 9999; /* Asegura que la foto esté por encima de otros elementos */
+      }
+    
+      #photo-container img {
+        width: 250px; /* Tamaño de todas las imágenes */
+        height: 250px; /* Tamaño de todas las imágenes */
+        margin-bottom: -40px; /* Espacio entre las imágenes */
+        border-radius: 50%; /* Crea bordes redondeados para las imágenes */
+      }
+    </style>
+    <div>
+      <audio id="audio" src="ale.mp3" type="audio/mpeg"></audio>
+    </div>
+    <script>
+      document.body.addEventListener('click', function() {
+        var audio = document.getElementById('audio');
+        audio.play();
+      });
+      </script>
+  <script defer src="https://app.embed.im/snow.js"></script> 
+
+
+    </body>
+    
+    </html>
